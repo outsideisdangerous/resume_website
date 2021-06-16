@@ -22,6 +22,19 @@ function App() {
           </ul>
         </nav>
       </header>
+      <main>
+        {tabIndex === 0 && (
+          <div className="main">
+            <img
+              id="space-blob"
+              src="https://images.pexels.com/photos/3109807/pexels-photo-3109807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""
+            />
+          </div>
+        )}
+        {tabIndex === 1 && <div>techandskills</div>}
+        {tabIndex === 2 && <div>contact</div>}
+      </main>
     </section>
   );
 }
