@@ -1,13 +1,82 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  background-color: #fcfcfc;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#tm,
+li,
+a,
+button {
+  font-family: "montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #24252a;
+  text-decoration: none;
+}
+
+li,
+a,
+button:hover {
+  cursor: pointer;
+}
+
+#tm {
+  cursor: pointer;
+  padding-right: 5rem;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  transform: scale(1, 0.9);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
+}
+
+.nav-bar {
+  justify-content: center;
+  align-content: center;
+
+  gap: 6px;
+  grid-auto-flow: column;
+}
+
+.nav-bar button {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+  font-weight: bolder;
+  border: none;
+}
+
+.nav-bar li:hover {
+  color: rgb(94, 94, 94);
+}
+
+.nav-bar button:hover {
+  color: rgb(94, 94, 94);
+}
+
+.contact-hover {
+  display: flex;
+  align-items: center;
+}
+
+#motown {
+  margin-left: 5px;
+}
+
+.job-date {
+  letter-spacing: var(--spacing);
+}
+
+#space-blob {
+  max-width: 100%;
+  min-width: 100%;
 }
