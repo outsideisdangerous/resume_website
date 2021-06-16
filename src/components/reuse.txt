@@ -1,0 +1,30 @@
+// {
+
+// <div className="btn-container">
+//   {workHistories.map((workHistory, index) => {
+//     return (
+//       <button key={workHistories.id} onClick={() => toggleTab(1)}>
+//         {workHistory.company}
+//       </button>
+//     );
+//   })}
+
+//   <div className="job-info">
+//     {workHistories.map((workHistory) => {
+//       const { id, title, date, company, duties } = workHistory;
+//       return (
+//         <div key={id}>
+//           <h3>{title}</h3>
+//           <p>{date}</p>
+//           <h4>{company}</h4>
+//           <ul>
+//             {duties.map((duty, index) => {
+//               return <li key={`${company}-${index}`}>{duty}</li>;
+//             })}
+//           </ul>
+//         </div>
+//       );
+//     })}
+//   </div>
+// </div>; */
+// }
