@@ -1,23 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+:root {
+  --standard-radius: 30px;
+  --standard-padding: 8px;
+  --primary-color: #0d10d667;
+  --secondary-color: #0d10d667;
+  --background-color: #fafafa;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #fcfcfc;
   font-family: "montserrat", sans-serif;
 }
 
 p {
+  font-size: 1rem;
   line-height: 1.6;
 }
 
 h3 {
+  font-size: 1.75rem;
   line-height: 1.8;
   text-decoration: #7e59ad underline;
 }
 
 h4 {
+  font-size: 1.25rem;
   line-height: 1.9;
   padding-top: 1.25rem;
 }
@@ -28,6 +38,19 @@ body {
   width: 100%;
   max-height: 100vh;
   overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.main {
+  position: relative;
+  text-align: center;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
 }
 
 /* header > button,
@@ -46,17 +69,61 @@ button {
   font-size: 1.25rem;
   color: #24252a;
   list-style-type: none;
-
   transition: 200ms;
 }
 
-main {
+.box {
+  width: 80%;
+  height: 550px;
+  margin: 20px 10%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+}
+
+.list-container > div {
+  flex-basis: 20%;
+  padding: 1rem;
+}
+
+.list-container-2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 3rem;
   text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+  align-items: center;
 }
 
 button {
   cursor: pointer;
   border: none;
+}
+
+.contact-btn {
+  border: none;
+  outline: 0;
+  background-color: rgb(41, 41, 41);
+  display: inline-block;
+  padding: 8px;
+  color: white;
+
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
 }
 
 #tm {
@@ -110,7 +177,42 @@ header {
   width: 100vw;
 }
 
+.motown {
+  border-radius: var(--standard-radius);
+  width: 100%;
+  height: 100%;
+}
+
+.motown img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .urlink {
   text-decoration: none;
   line-height: 1.8;
+  margin: 5px;
+}
+
+.react {
+  color: rgb(55, 55, 161);
+  height: 3rem;
+  width: 3rem;
+}
+
+.html {
+  color: black;
+  height: 3rem;
+  width: 3rem;
+}
+.css {
+  color: black;
+  height: 3rem;
+  width: 3rem;
+}
+.python {
+  color: black;
+  height: 3rem;
+  width: 3rem;
 }
